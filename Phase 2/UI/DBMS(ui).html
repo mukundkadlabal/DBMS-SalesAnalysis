@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <h1 align="center">Sales Analysis</h1>
+        <title>DBMS User Interface</title>
+        <link rel="stylesheet" type="text/css" href="cards.css">
+        <style>
+                ul {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  overflow: hidden;
+                  background-color: azure;
+                }
+                
+                li {
+                  float: left;
+                }
+                
+                li a {
+                  display: block;
+                  text-align: center;
+                  padding: 14px 16px;
+                  text-decoration: none;
+                }
+                
+                li a:hover:not(.active) {
+                  background-color: blue;
+                }
+                
+        </style>
+    <body>
+        <ul>
+            <li><a class="active" href="#repots">Reports</a></li>
+            <li><a href="#news">Dashboard</a></li>
+            <li><a href="#about">Products</a></li>
+            <li><a href="#about">Super Stockists</a></li>
+            <li><a href="#about">Distributors</a></li>
+            <li><a href="#about">Salesman</a></li>
+            <li><a href="#about">Retailers</a></li>
+            <li><a href="#about">Customers</a></li>
+            <li><a href="#about">Discounts</a></li>
+            <li><a href="#about">Notification</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>                  
+    </body>
+
+
+
+        <style>
+            table.scroll {
+            border-spacing: 0;
+            border: 2px solid black;
+            }
+
+            table.scroll tbody,
+            table.scroll thead { display: block; }
+
+            thead tr th { 
+                height: 30px;
+                line-height: 30px;
+            }
+
+            table.scroll tbody {
+            height: 100px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            }
+
+            tbody { border-top: 2px solid black; }
+
+            tbody td, thead th {
+            border-right: 1px solid black;
+            }
+
+            tbody td:last-child, thead th:last-child {
+            border-right: none;
+            }
+
+            a:link, a:visited {
+            background-color: lightblue;
+            color: lightblue;
+            padding: 2px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            }
+
+            a:hover, a:active {
+            background-color: blue;
+            }
+        </style>
+
+
+<table class="scroll" width="50" style="margin-top:90px;">
+    <thead>
+        <tr>
+            <th>Select zone</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#default.asp" target="_blank">NORTH</a></td>
+            
+        </tr>
+        <tr>
+            <td><a href="#default.asp" target="_blank">SOUTH</a></td>
+            
+        </tr>
+        <tr>
+            <td><a href="#default.asp" target="_blank">EAST</a></td>
+            
+        </tr>
+        <tr>
+            <td><a href="#default.asp" target="_blank">WEST</a></td>
+            
+        </tr>
+        <tr>
+            <td><a href="#default.asp" target="_blank">CENTRAL</a></td>
+            
+        </tr>
+        <tr>
+            <td><a href="#default.asp" target="_blank">NORTH(E)</a></td>
+            
+        </tr>
+        <tr>
+            <td><a href="#default.asp" target="_blank">NORTH(W)</a></td>
+            
+        </tr>
+        <tr>
+            <td><a href="#default.asp" target="_blank">SOUTH(E)</a></td>
+                
+        </tr>
+        <tr>
+            <td><a href="#default.asp" target="_blank">SOUTH(W)</a></td>
+                    
+        </tr>
+    </tbody>
+</table>
+
+
+
+<style>
+        table.scroll {
+        border-spacing: 0;
+        border: 2px solid black;
+    }
+    
+        table.scroll tbody,
+        table.scroll thead { display: block; }
+    
+        thead tr th { 
+        height: 30px;
+        line-height: 30px;
+        /* text-align: left; */
+    }
+    
+        table.scroll tbody {
+        height: 100px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    
+        tbody { border-top: 2px solid black; 
+    }
+    
+        tbody td, thead th {
+        /* width: 20%; */ /* Optional */
+        border-right: 1px solid black;
+        /* white-space: nowrap; */
+    }
+    
+        tbody td:last-child, thead th:last-child {
+        border-right: none;
+    }
+    
+        a:link, a:visited {
+        background-color: white;
+        color: black;
+        padding: 2px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+        a:hover, a:active {
+        background-color: blue;
+    }
+</style>
+
+
+    <table class="scroll" width="155" style="margin-top:10px;">
+        <thead>
+            <tr>
+                <th>Select Sub-zone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#default.asp" target="_blank">Bangalore Urban</a></td>
+                
+            </tr>
+            <tr>
+                <td><a href="#default.asp" target="_blank">Bangalore Rural</a></td>
+                
+            </tr>
+            <tr>
+                <td><a href="#default.asp" target="_blank">Mysore</a></td>
+                
+            </tr>
+            <tr>
+                <td><a href="#default.asp" target="_blank">Mandya</a></td>
+                
+            </tr>
+            <tr>
+                <td><a href="#default.asp" target="_blank">Hassan</a></td>
+                
+            </tr>
+            <tr>
+                <td><a href="#default.asp" target="_blank">Kolar</a></td>
+                
+            </tr>
+            <tr>
+                <td><a href="#default.asp" target="_blank">Mangalore</a></td>
+                
+            </tr>
+            <tr>
+                <td><a href="#default.asp" target="_blank">Belgaum</a></td>
+                    
+            </tr>
+            <tr>
+                <td><a href="#default.asp" target="_blank">Bellary</a></td>
+                        
+            </tr>
+            <tr>
+                <td><a href="#default.asp" target="_blank">Udupi</a></td>
+                            
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <style>
+            table.scroll {
+            /* width: 100%; */ /* Optional */
+            /* border-collapse: collapse; */
+            border-spacing: 0;
+            border: 2px solid black;
+        }
+        
+            table.scroll tbody,
+            table.scroll thead { display: block; }
+        
+            thead tr th { 
+            height: 30px;
+            line-height: 30px;
+            /* text-align: left; */
+        }
+        
+            table.scroll tbody {
+            height: 100px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        
+            tbody { border-top: 2px solid black; }
+        
+            tbody td, thead th {
+            /* width: 20%; */ /* Optional */
+            border-right: 1px solid black;
+            /* white-space: nowrap; */
+        }
+        
+            tbody td:last-child, thead th:last-child {
+            border-right: none;
+        }
+        
+            a:link, a:visited {
+            background-color: white;
+            color: black;
+            padding: 2px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+            a:hover, a:active {
+            background-color: blue;
+        }
+    </style>
+
+
+    <table class="scroll" width="155" style="margin-left:0px; margin-top:05px;">
+            <thead>
+                <tr>
+                    <th>Select Depot</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#default.asp" target="_blank">Depot 1</a></td>
+                    
+                </tr>
+                <tr>
+                    <td><a href="#default.asp" target="_blank">Depot 2</a></td>
+                    
+                </tr>
+                <tr>
+                    <td><a href="#default.asp" target="_blank">Depot 3</a></td>
+                    
+                </tr>
+                <tr>
+                    <td><a href="#default.asp" target="_blank">Depot 4</a></td>
+                    
+                </tr>
+                <tr>
+                    <td><a href="#default.asp" target="_blank">Depot 5</a></td>
+                    
+                </tr>
+                <tr>
+                    <td><a href="#default.asp" target="_blank">Depot 6</a></td>
+                    
+                </tr>
+                <tr>
+                    <td><a href="#default.asp" target="_blank">Depot 7</a></td>
+                    
+                </tr>
+                <tr>
+                    <td><a href="#default.asp" target="_blank">Depot 8</a></td>
+                        
+                </tr>
+                <tr>
+                    <td><a href="#default.asp" target="_blank">Depot 9</a></td>
+                            
+                </tr>
+                <tr>
+                    <td><a href="#default.asp" target="_blank">Depot 10</a></td>
+                                
+                </tr>
+            </tbody>
+    </table>
+
+
+
+    <style>
+                table, th, td {
+                  border: 1px solid black;
+                  border-collapse: collapse;
+                }
+                th, td {
+                  padding: 5px;
+                  text-align: left;
+                }
+    </style>
+
+
+    <table width="500" height="100" style="margin-top:-350px; margin-left:350px;">
+            <tr>
+                <th>ForDate</th>
+                <th>InvoiceID</th>
+                <th>Mode</th>
+                <th>User</th>
+                <th>Outlet</th>
+                <th>BillNo</th>
+                <th>PaymentID</th>
+                <th>GRN</th>
+                <th>PO</th>
+                <th>Discount</th>
+            </tr>
+            <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+                <td>Content 4</td>
+                <td>Content 5</td>
+                <td>Content 6</td>
+                <td>Content 7</td>
+                <td>Content 8</td>
+                <td>Content 9</td>
+                <td>Content 10</td>
+            </tr>
+            <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+                <td>Content 4</td>
+                <td>Content 5</td>
+                <td>Content 6</td>
+                <td>Content 7</td>
+                <td>Content 8</td>
+                <td>Content 9</td>
+                <td>Content 10</td>
+            </tr>
+            <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+                <td>Content 4</td>
+                <td>Content 5</td>
+                <td>Content 6</td>
+                <td>Content 7</td>
+                <td>Content 8</td>
+                <td>Content 9</td>
+                <td>Content 10</td>
+            </tr>
+            <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+                <td>Content 4</td>
+                <td>Content 5</td>
+                <td>Content 6</td>
+                <td>Content 7</td>
+                <td>Content 8</td>
+                <td>Content 9</td>
+                <td>Content 10</td>
+            </tr>
+            <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+                <td>Content 4</td>
+                <td>Content 5</td>
+                <td>Content 6</td>
+                <td>Content 7</td>
+                <td>Content 8</td>
+                <td>Content 9</td>
+                <td>Content 10</td>
+            </tr>
+            <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+                <td>Content 4</td>
+                <td>Content 5</td>
+                <td>Content 6</td>
+                <td>Content 7</td>
+                <td>Content 8</td>
+                <td>Content 9</td>
+                <td>Content 10</td>
+            </tr>
+            <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+                <td>Content 4</td>
+                <td>Content 5</td>
+                <td>Content 6</td>
+                <td>Content 7</td>
+                <td>Content 8</td>
+                <td>Content 9</td>
+                <td>Content 10</td>
+            </tr>
+    </tbody>
+    </table>
+                    
+    
+    <table width="676" height="10" style="margin-top:-450px; margin-left:350px;">
+        <tr>
+        <th>TotalQuant</th>
+        <th>TotalAmt</th>
+        <th>TotalDiscount</th>
+        <th>TotalPending</th>
+        </tr>
+        <tr>
+        <td>6108</td>
+        <td>113,305.00</td>
+        <td>0.0</td>
+        <td>102,425.13</td>
+        </tr>
+        </table>
+
+        <style>
+            table.scroll {
+            border-spacing: 0;
+            border: 2px solid black;
+            }
+
+            table.scroll tbody,
+            table.scroll thead { display: block; }
+
+            thead tr th { 
+                height: 30px;
+                line-height: 30px;
+            }
+
+            table.scroll tbody {
+            height: 100px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            }
+
+            tbody { border-top: 2px solid black; }
+
+            tbody td, thead th {
+            border-right: 1px solid black;
+            }
+
+            tbody td:last-child, thead th:last-child {
+            border-right: none;
+            }
+
+            a:link, a:visited {
+            padding: 2px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            }
+
+            a:hover, a:active {
+            background-color: blue;
+            }
+        </style>
+
+
+<table class="scroll" width="50" style="margin-left:1200px; margin-top: -20px;">
+    <thead>
+        <tr>
+            <th>Select Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#default.asp" target="_blank">Stock Trade</a></td>
+            
+        </tr>
+        <tr>
+            <td><a href="#default.asp" target="_blank">Ditributor Trade</a></td>
+            
+        </tr>
+        <tr>
+            <td><a href="#default.asp" target="_blank">Retail Trade</a></td>
+            
+        </tr>
+        <tr>
+            <td><a href="#default.asp" target="_blank">Consumer Trade</a></td>
+            
+        </tr>
+    </tbody>
+</table>
+
+</head>
+</html>

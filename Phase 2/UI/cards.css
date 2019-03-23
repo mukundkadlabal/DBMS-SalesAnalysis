@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body{
+    align-content: center;
+
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: azure;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 2px 2px 2px;
+}
+
+.main{
+    padding: 25px;
+    margin:10px;
+}
+.subjects{
+    padding:10px;
+    margin:10px;
+}
+
+body{
+    background-color: rgb(243, 242, 241);
+}
+
+.subject{
+    height:100px;
+    width:100px;
+    background-color: aquamarine;
+    padding:10px;
+    align-content: center;
+}
+.subject:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+/*Navigation Bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+/*Login Page*/
+.loginbox{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    background-color: azure;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    padding:25px;
+    align-content: center;
+    text-align: center;
+}
+
+input{
+    font-size:22px;
+    display:block;
+    width:90%;
+    padding:10px;
+    background:none;
+    background-image:none;
+    border:1px solid black;
+    color: black;
+    border-radius:0;
+    transition:border-color .25s ease, box-shadow .25s ease;
+
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    font-family: 'Montserrat', sans-serif;
+}
+/*SUBJECT TO CHANGE*/
+button {
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+input[type=submit]{
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width:100%;
+    height: 45px;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+input[type=submit]:hover{
+    opacity: 1;
+}
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+    align-content: center;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+/* ABOUT US*/
+
+
+.split {
+    font-family: 'Montserrat', sans-serif; 
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text {
+    
+    transition: 0.3s;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 0px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* CONTACT US*/
+
+.map{
+    height:400px;
+    width: 500px;
+    border: 1px solid #888;
+}
